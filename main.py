@@ -1,4 +1,5 @@
 from openai import OpenAI
+from src.read import voicePDF
 
 client = OpenAI(
     api_key="test",
@@ -24,3 +25,6 @@ def connectionToIA():
 
 def readPDF():
     print("Leitura do pdf iniciada")
+    voicePDF()
+
+readPDF()
